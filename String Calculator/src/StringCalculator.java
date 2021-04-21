@@ -1,14 +1,14 @@
 
 public class StringCalculator {
 
-	public int Add(String numbers){
+	public int Add(String numbers) throws Exception{
 	 
 		return(getSum(numbers));
 	
 	}
 	
 	
-	public int getSum(String str){
+        public int getSum(String str) throws Exception{
 		
 		String delimiter = "\n|,";
 	
@@ -25,10 +25,14 @@ public class StringCalculator {
 		 else{
 			int sum=0 ;
 			  for(String curr:integers){
-				  
+				   
+				  if(Integer.parseInt(curr) <0){
+	    		      throw new Exception("negatives not allowed");
+	    		     } 
 				  sum += Integer.parseInt(curr);			
 		     	}
 			return sum; 
 		 }
 	}
-}
+	}
+

@@ -14,40 +14,45 @@ public class TestClass {
 		stringcalculator = new StringCalculator();
 	}
 	
-	public void  empty_String_ReturnZero() {
+	public void  empty_String_ReturnZero() throws Exception {
 		
 		assertEquals(stringcalculator.Add(""),0);
 
 	}
 	
-	public void adding_Single_Number_itself(){
+	public void adding_Single_Number_itself() throws Exception{
 		
 		assertEquals(stringcalculator.Add("1"),1);
 
 	}
 	
-	public void  adding_Two_Numbers_Separated_By_Comma(){
+	public void  adding_Two_Numbers_Separated_By_Comma() throws Exception{
 		
 		assertEquals(stringcalculator.Add("1,2"),3);
 
 	}
 	
-	public void adding_Three_Numbers(){
+	public void adding_Three_Numbers() throws Exception{
 		
 		assertEquals(stringcalculator.Add("1,3,3"),7);
 
 	}
 	
-	public void adding_Two_Numbers_With_NewLine(){
+	public void adding_Two_Numbers_With_NewLine() throws Exception{
 		
 		assertEquals(stringcalculator.Add("1\n2,3"),6);
 		
 	}
 	
-  public void adding_Two_Numbers_StartWith_double_Slash(){
-	  assertEquals(stringcalculator.Add("//;\n1;2"),3);
+  public void adding_Two_Numbers_StartWith_double_Slash() throws Exception{
+	   assertEquals(stringcalculator.Add("//;\n1;2"),3);
   }
-	
+  
+  @Test(expectedExceptions=Exception.class)
+  public void negetive_Number_Input() throws Exception{
+	  
+	    stringcalculator.Add("-1");
+  }
 	
 	
 }
