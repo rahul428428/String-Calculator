@@ -44,31 +44,35 @@ public class TestClass {
 		
 	}
 	
-  public void adding_Two_Numbers_StartWith_double_Slash() throws Exception{
+   public void adding_Two_Numbers_StartWith_double_Slash() throws Exception{
 	   assertEquals(stringcalculator.Add("//;\n1;2"),3);
-  }
-  
-  @Test(expectedExceptions=Exception.class)
-  public void negetive_Number_Input() throws Exception{
+    }
+   
+   @Test(expectedExceptions=Exception.class)
+   public void negetive_Number_Input() throws Exception{
 	  
-	    stringcalculator.Add("-1");
-  }
+	   stringcalculator.Add("-1");
+   }
   
-  @Test(expectedExceptions=Exception.class)
-  public void Multiple_negetive_Number_Input() throws Exception{
-	  stringcalculator.Add("-1,-2,-3");
-  }
+   @Test(expectedExceptions=Exception.class)
+   public void Multiple_negetive_Number_Input() throws Exception{
+	   stringcalculator.Add("-1,-2,-3");
+   }
 	
-  public void adding_Two_Numbers_With_Greater_Than_1000() throws Exception{
+   public void adding_Two_Numbers_With_Greater_Than_1000() throws Exception{
 
-    	 assertEquals(stringcalculator.Add("2,1001"),2);
+     assertEquals(stringcalculator.Add("2,1001"),2);
  
- } 
+  } 
   
   public void delimiters_of_any_length() throws Exception {
   	
-  	assertEquals(stringcalculator.Add("//[***]\n1***2***3"),6);
+  	 assertEquals(stringcalculator.Add("//[***]\n1***2***3"),6);
   }
-  	
+  
+  public void multiple_delimiters_with_length_one() throws Exception{
+	  
+	  assertEquals(stringcalculator.Add("//[*][%]\n1*2%3"),6);
+  }
    
 }
