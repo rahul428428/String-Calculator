@@ -20,4 +20,12 @@ public class TestClass {
 
 	}
 	
+	public void adding_Single_Number_itself(){
+		
+		assertEquals(stringcalculator.Add("1"),1);
+
+	}
+	
+	
+	
 }
