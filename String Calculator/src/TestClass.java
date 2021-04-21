@@ -64,5 +64,11 @@ public class TestClass {
     	 assertEquals(stringcalculator.Add("2,1001"),2);
  
  } 
-	
+  
+  public void delimiters_of_any_length() throws Exception {
+  	
+  	assertEquals(stringcalculator.Add("//[***]\n1***2***3"),6);
+  }
+  	
+   
 }

@@ -1,7 +1,9 @@
 
 public class StringCalculator {
-
+  
+ 	static int count =0;
 	public int Add(String numbers) throws Exception{
+	 
 	 
 		return(getSum(numbers));
 	
@@ -10,6 +12,7 @@ public class StringCalculator {
 	
         public int getSum(String str) throws Exception{
 		
+        
 		String delimiter = "\n|,";
 	
 		
@@ -26,6 +29,9 @@ public class StringCalculator {
 			int sum=0 ;
 			  for(String curr:integers){
 				   
+				  if(curr.isEmpty())
+					 continue; 
+				  
 				  if(Integer.parseInt(curr) <0){
 	    		      throw new Exception("negatives not allowed");
 	    		     } 
@@ -38,5 +44,7 @@ public class StringCalculator {
 			return sum; 
 		 }
 	}
-	}
+        
+      
+}
 
