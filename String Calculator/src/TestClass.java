@@ -32,6 +32,12 @@ public class TestClass {
 
 	}
 	
+	public void adding_Three_Numbers(){
+		
+		assertEquals(stringcalculator.Add("1,3,3"),7);
+
+	}
+	
 	
 	
 }
