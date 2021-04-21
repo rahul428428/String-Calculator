@@ -44,6 +44,10 @@ public class TestClass {
 		
 	}
 	
+  public void adding_Two_Numbers_StartWith_double_Slash(){
+	  assertEquals(stringcalculator.Add("//;\n1;2"),3);
+  }
+	
 	
 	
 }

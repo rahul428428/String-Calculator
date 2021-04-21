@@ -10,7 +10,15 @@ public class StringCalculator {
 	
 	public int getSum(String str){
 		
-		String[]  integers = str.split("\n|,");
+		String delimiter = "\n|,";
+	
+		
+		if(str.startsWith("//")){
+			String[] splitted = str.split("\n");
+            delimiter = splitted[0].substring(2);
+            str = splitted[1];
+		}
+		String[]  integers = str.split(delimiter);
 		
 		 if(str.isEmpty())	
 			return 0;  

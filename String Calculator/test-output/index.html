@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\My Pc\AppData\Local\Temp\testng-eclipse--1733792859\testng-customsuite.xml</span>
+                    <span>C:\Users\My Pc\AppData\Local\Temp\testng-eclipse-436155879\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,6 +113,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestClass" hash-for-method="adding_Two_Numbers_Separated_By_Comma">adding_Two_Numbers_Separated_By_Comma</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestClass" hash-for-method="adding_Two_Numbers_StartWith_double_Slash">adding_Two_Numbers_StartWith_double_Slash</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestClass" hash-for-method="adding_Two_Numbers_With_NewLine">adding_Two_Numbers_With_NewLine</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,6 +171,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="adding_Two_Numbers_StartWith_double_Slash">
+                  </a> <!-- adding_Two_Numbers_StartWith_double_Slash -->
+                  <span class="method-name">adding_Two_Numbers_StartWith_double_Slash</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adding_Two_Numbers_With_NewLine">
+                  </a> <!-- adding_Two_Numbers_With_NewLine -->
+                  <span class="method-name">adding_Two_Numbers_With_NewLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="empty_String_ReturnZero">
                   </a> <!-- empty_String_ReturnZero -->
                   <span class="method-name">empty_String_ReturnZero</span>
@@ -171,7 +195,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\My Pc\AppData\Local\Temp\testng-eclipse--1733792859\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\My Pc\AppData\Local\Temp\testng-eclipse-436155879\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -220,28 +244,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'adding_Three_Numbers')
+data.setCell(0, 1, 'adding_Single_Number_itself')
 data.setCell(0, 2, 'TestClass')
-data.setCell(0, 3, 16);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'adding_Single_Number_itself')
+data.setCell(1, 1, 'adding_Three_Numbers')
 data.setCell(1, 2, 'TestClass')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'adding_Two_Numbers_Separated_By_Comma')
+data.setCell(2, 1, 'adding_Two_Numbers_With_NewLine')
 data.setCell(2, 2, 'TestClass')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'empty_String_ReturnZero')
+data.setCell(3, 1, 'adding_Two_Numbers_Separated_By_Comma')
 data.setCell(3, 2, 'TestClass')
 data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'empty_String_ReturnZero')
+data.setCell(4, 2, 'TestClass')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'adding_Two_Numbers_StartWith_double_Slash')
+data.setCell(5, 2, 'TestClass')
+data.setCell(5, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -274,14 +306,22 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">adding_Single_Number_itself</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">adding_Three_Numbers</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">adding_Two_Numbers_Separated_By_Comma</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adding_Two_Numbers_StartWith_double_Slash</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adding_Two_Numbers_With_NewLine</span>
                 <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">

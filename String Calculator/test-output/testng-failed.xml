@@ -5,8 +5,8 @@
     <classes>
       <class name="TestClass">
         <methods>
-          <include name="adding_Three_Numbers"/>
           <include name="init"/>
+          <include name="adding_Two_Numbers_StartWith_double_Slash"/>
         </methods>
       </class> <!-- TestClass -->
     </classes>
