@@ -5,7 +5,7 @@
     <classes>
       <class name="TestClass">
         <methods>
-          <include name="adding_Single_Number_itself"/>
+          <include name="adding_Three_Numbers"/>
           <include name="init"/>
         </methods>
       </class> <!-- TestClass -->
