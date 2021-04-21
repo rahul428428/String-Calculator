@@ -26,6 +26,12 @@ public class TestClass {
 
 	}
 	
+	public void  adding_Two_Numbers_Separated_By_Comma(){
+		
+		assertEquals(stringcalculator.Add("1,2"),3);
+
+	}
+	
 	
 	
 }
