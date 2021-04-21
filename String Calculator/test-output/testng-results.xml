@@ -1,40 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47" started-at="2021-04-21T05:32:29Z" finished-at="2021-04-21T05:32:30Z">
+  <suite name="Default suite" duration-ms="78" started-at="2021-04-21T07:35:43Z" finished-at="2021-04-21T07:35:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47" started-at="2021-04-21T05:32:29Z" finished-at="2021-04-21T05:32:30Z">
+    <test name="Default test" duration-ms="78" started-at="2021-04-21T07:35:43Z" finished-at="2021-04-21T07:35:43Z">
       <class name="TestClass">
-        <test-method status="PASS" signature="init()[pri:0, instance:TestClass@6d8a00e3]" name="init" is-config="true" duration-ms="16" started-at="2021-04-21T11:02:29Z" finished-at="2021-04-21T11:02:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestClass@548b7f67]" name="init" is-config="true" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="adding_Single_Number_itself()[pri:0, instance:TestClass@6d8a00e3]" name="adding_Single_Number_itself" duration-ms="0" started-at="2021-04-21T11:02:30Z" finished-at="2021-04-21T11:02:30Z">
+        <test-method status="PASS" signature="Multiple_negetive_Number_Input()[pri:0, instance:TestClass@548b7f67]" name="Multiple_negetive_Number_Input" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[negatives not allowed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: negatives not allowed
+	at StringCalculator.getSum(StringCalculator.java:30)
+	at StringCalculator.Add(StringCalculator.java:6)
+	at TestClass.Multiple_negetive_Number_Input(TestClass.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adding_Single_Number_itself -->
-        <test-method status="PASS" signature="adding_Three_Numbers()[pri:0, instance:TestClass@6d8a00e3]" name="adding_Three_Numbers" duration-ms="0" started-at="2021-04-21T11:02:30Z" finished-at="2021-04-21T11:02:30Z">
+        </test-method> <!-- Multiple_negetive_Number_Input -->
+        <test-method status="PASS" signature="adding_Three_Numbers()[pri:0, instance:TestClass@548b7f67]" name="adding_Three_Numbers" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adding_Three_Numbers -->
-        <test-method status="PASS" signature="adding_Two_Numbers_With_NewLine()[pri:0, instance:TestClass@6d8a00e3]" name="adding_Two_Numbers_With_NewLine" duration-ms="0" started-at="2021-04-21T11:02:30Z" finished-at="2021-04-21T11:02:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adding_Two_Numbers_With_NewLine -->
-        <test-method status="PASS" signature="adding_Two_Numbers_Separated_By_Comma()[pri:0, instance:TestClass@6d8a00e3]" name="adding_Two_Numbers_Separated_By_Comma" duration-ms="0" started-at="2021-04-21T11:02:30Z" finished-at="2021-04-21T11:02:30Z">
+        <test-method status="PASS" signature="adding_Two_Numbers_Separated_By_Comma()[pri:0, instance:TestClass@548b7f67]" name="adding_Two_Numbers_Separated_By_Comma" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adding_Two_Numbers_Separated_By_Comma -->
-        <test-method status="PASS" signature="empty_String_ReturnZero()[pri:0, instance:TestClass@6d8a00e3]" name="empty_String_ReturnZero" duration-ms="0" started-at="2021-04-21T11:02:30Z" finished-at="2021-04-21T11:02:30Z">
+        <test-method status="PASS" signature="adding_Single_Number_itself()[pri:0, instance:TestClass@548b7f67]" name="adding_Single_Number_itself" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- empty_String_ReturnZero -->
-        <test-method status="PASS" signature="adding_Two_Numbers_StartWith_double_Slash()[pri:0, instance:TestClass@6d8a00e3]" name="adding_Two_Numbers_StartWith_double_Slash" duration-ms="0" started-at="2021-04-21T11:02:30Z" finished-at="2021-04-21T11:02:30Z">
+        </test-method> <!-- adding_Single_Number_itself -->
+        <test-method status="PASS" signature="adding_Two_Numbers_StartWith_double_Slash()[pri:0, instance:TestClass@548b7f67]" name="adding_Two_Numbers_StartWith_double_Slash" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adding_Two_Numbers_StartWith_double_Slash -->
+        <test-method status="PASS" signature="adding_Two_Numbers_With_NewLine()[pri:0, instance:TestClass@548b7f67]" name="adding_Two_Numbers_With_NewLine" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adding_Two_Numbers_With_NewLine -->
+        <test-method status="PASS" signature="empty_String_ReturnZero()[pri:0, instance:TestClass@548b7f67]" name="empty_String_ReturnZero" duration-ms="0" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empty_String_ReturnZero -->
+        <test-method status="PASS" signature="negetive_Number_Input()[pri:0, instance:TestClass@548b7f67]" name="negetive_Number_Input" duration-ms="15" started-at="2021-04-21T13:05:43Z" finished-at="2021-04-21T13:05:43Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[negatives not allowed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: negatives not allowed
+	at StringCalculator.getSum(StringCalculator.java:30)
+	at StringCalculator.Add(StringCalculator.java:6)
+	at TestClass.negetive_Number_Input(TestClass.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negetive_Number_Input -->
       </class> <!-- TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

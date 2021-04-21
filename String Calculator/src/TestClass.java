@@ -53,6 +53,11 @@ public class TestClass {
 	  
 	    stringcalculator.Add("-1");
   }
+  
+  @Test(expectedExceptions=Exception.class)
+  public void Multiple_negetive_Number_Input() throws Exception{
+	  stringcalculator.Add("-1,-2,-3");
+  }
 	
 	
 }
