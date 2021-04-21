@@ -10,7 +10,7 @@ public class StringCalculator {
 	
 	public int getSum(String str){
 		
-		String[]  integers = str.split(",");
+		String[]  integers = str.split("\n|,");
 		
 		 if(str.isEmpty())	
 			return 0;  

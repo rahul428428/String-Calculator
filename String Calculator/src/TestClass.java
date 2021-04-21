@@ -38,6 +38,12 @@ public class TestClass {
 
 	}
 	
+	public void adding_Two_Numbers_With_NewLine(){
+		
+		assertEquals(stringcalculator.Add("1\n2,3"),6);
+		
+	}
+	
 	
 	
 }
