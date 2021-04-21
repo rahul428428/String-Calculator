@@ -6,6 +6,7 @@ public class StringCalculator {
 	 
 	 
 		return(getSum(numbers));
+		
 	
 	}
 	
@@ -14,7 +15,7 @@ public class StringCalculator {
 		
         String[] splitted = str.split("\n");
 		String delimiter = "\n|,";
-	 
+	    
 		if(str.startsWith("//") && str.contains("]["))
 		{  
 			int indx = splitted[0].indexOf("][");
@@ -25,14 +26,8 @@ public class StringCalculator {
 			delimiter = "[" + delimiter1 + delimiter2 + "]" ;
 			str = splitted[1];
 		}
-		
-		if(str.startsWith("//") && !(str.contains("[")))
-		{	 								
-			delimiter = splitted[0].substring(2);
-			str = splitted[1];
-		}  
-		
-		if(str.startsWith("//")){
+			
+	 	if(str.startsWith("//")){
 			 
             delimiter = splitted[0].substring(2);
             str = splitted[1];
