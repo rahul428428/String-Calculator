@@ -75,4 +75,8 @@ public class TestClass {
 	  assertEquals(stringcalculator.Add("//[*][%]\n1*2%3"),6);
   }
    
-}
+  public void multiple_delimiters_with_More_Than_One_length_() throws Exception{
+	  assertEquals(stringcalculator.Add("//[**][%%]\n1**2%%3"),6);
+	  assertEquals(stringcalculator.Add("//[***][%%]\n1**2%%%%%%3"),6);
+  }	  
+  }

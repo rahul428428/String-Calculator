@@ -8,13 +8,11 @@
           <include name="adding_Single_Number_itself"/>
           <include name="adding_Three_Numbers"/>
           <include name="adding_Two_Numbers_With_NewLine"/>
-          <include name="Multiple_negetive_Number_Input"/>
+          <include name="multiple_delimiters_with_length_one"/>
           <include name="adding_Two_Numbers_With_Greater_Than_1000"/>
-          <include name="delimiters_of_any_length"/>
           <include name="init"/>
-          <include name="negetive_Number_Input"/>
+          <include name="empty_String_ReturnZero"/>
           <include name="adding_Two_Numbers_Separated_By_Comma"/>
-          <include name="adding_Two_Numbers_StartWith_double_Slash"/>
         </methods>
       </class> <!-- TestClass -->
     </classes>
