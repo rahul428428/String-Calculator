@@ -59,5 +59,10 @@ public class TestClass {
 	  stringcalculator.Add("-1,-2,-3");
   }
 	
+  public void adding_Two_Numbers_With_Greater_Than_1000() throws Exception{
+
+    	 assertEquals(stringcalculator.Add("2,1001"),2);
+ 
+ } 
 	
 }

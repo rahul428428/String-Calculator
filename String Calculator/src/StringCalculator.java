@@ -29,6 +29,10 @@ public class StringCalculator {
 				  if(Integer.parseInt(curr) <0){
 	    		      throw new Exception("negatives not allowed");
 	    		     } 
+				  
+				  if(Integer.parseInt(curr)>1000)
+	    			   continue;
+				  
 				  sum += Integer.parseInt(curr);			
 		     	}
 			return sum; 
